@@ -1,0 +1,68 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+    Требования и образец статьи и доклада
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/participant.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:participant' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:participant' %}
+{% endblock %}
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="myblocks">
+        <div class="advts__container">
+            <div class="myblock1">
+                <div class="container">
+                    <h3 class="title">
+                        Список зарегистрировавшихся участников на конференцию
+                        <br>
+                        <span>на 27-июня 2022 г.</span>
+                    </h3>
+                    <div class="text">
+                        {% for category in categories %}
+                            <div class="cateogory">
+                                <div class="cateogory__title bt1 bl1 br1 bb1">{{ category }} </div>
+                                {% if category.participant.count %}
+                                    {% for p in category.participant.all %}
+                                        <div class="category__user-name bl1 br1 bb1">
+                                            {{ p.name_ru}} 
+                                        </div>
+                                        <div class="category__user-company bb1">
+                                            {{ p.company_ru}} 
+                                        </div>    
+                                        <div class="category__user-country bl1 br1 bb1">
+                                            {{ p.country.name_ru}}
+                                        </div>                   
+                                    {% endfor %}
+                                {% else %}
+                                <div class="cateogory__empty bl1 br1 bb1"> пусто </div>
+                                {% endif %}
+                            </div>
+                            <br>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,105 @@
+{%  load    static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF__8">
+    <meta http__equiv="X__UA__Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device__width, initial__scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock %}</title>
+
+    <link rel="stylesheet"   href="{% static 'main/css/elements.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/footer.css' %}">
+    {% block css%}{% endblock %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body id="home">
+    <header class="header">
+        <div class="container header__container">
+            <a href="{% url 'ru:main' %}">
+                <img src= {% block logo %}{% endblock %} class="header__logo">
+            </a>
+             <div class = "burger__and__langs">
+
+                <div class="langs">
+                    <a class="langs__ru lang lang_active a" href="{% block lang_ru %}{% endblock %}">ru</a>
+                    <a class="langs__en lang a" href="{% block lang_en %}{% endblock %}">en</a>
+                </div>
+
+                <div class="burger__icon">
+                    <div class="burger__line-1"></div>
+                    <div class="burger__line-2"></div>
+                    <div class="burger__line-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="burger__items">
+            <div class="burger__item"><a href="{% url 'ru:main' %}" class="a container">Главная</a></div>
+            <div class="burger__item"><a href="{% url 'ru:about-conference' %}" class="a container">Информации о конференции</a></div>
+            <div class="burger__item"><a href="{% url 'ru:program' %}" class="a container">Программа конференции</a></div>
+            <div class="burger__item"><a href="{% url 'ru:advertisement' %}" class="a container">Объявление и релгамент конференции</a></div>
+            <div class="burger__item"><a href="{% url 'ru:events' %}" class="a container">Общественные мероприятия</a></div>
+            <div class="burger__item"><a href="{% url 'ru:committee' %}" class="a container">Комитет конференции</a></div>
+            <div class="burger__item"><a href="{% url 'ru:registration' %}" class="a container">Регистрация участника конференции</a></div>
+            <div class="burger__item"><a href="{% url 'ru:feels' %}" class="a container">Регистрационные и издательские взносы</a></div>
+
+            <div class="burger__item"><a href="{% url 'ru:requirements' %}" class="a container">Требования и образец статьи и доклада</a></div>
+            <div class="burger__item"><a href="{% url 'ru:price-list' %}" class="a container">Прайс листы отелей</a></div>
+            <div class="burger__item"><a href="{% url 'ru:participant' %}" class="a container">Список регистрированных участников</a></div>
+            
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer">
+        <div class="container footer__container">
+
+            <p class="footer__contact">
+                <span title="web-size">
+                    Веб-сайт:
+                    <a href="https://iaeee.kg/" class="footer__a" target="_blank">www.iaeee.kg</a>
+                </span> |
+                <span title="tel/fax">
+                    Тел./факс:
+                    <a href="tel:+996312449903" class="footer__a" target="_blank">+996 312 44 99 03</a>
+                </span> 
+                <br>
+                <span title="seismokg@mail.ru">
+                    e-mail:
+                    <a href="mailto:seismokg@mail.ru" class="footer__a" alt="seismokg@mail.ru" target="_blank" >seismokg@mail.ru</a>
+                </span> 
+                
+                <br>
+                <span title="WhatsApp">
+                    WhatsApp:
+                    <a href="https://wa.me/996779141012" class="footer__a" class="footer__a" target="_blank">+996 779 14 10 12</a>, Эльмира Аширбаева, исполнительный координатор;
+                </span>
+                <br>
+                <span title="WhatsApp">
+                    WhatsApp:
+                    <a href="https://wa.me/996779141012" class="footer__a" target="_blank">+996 705 90 89 41</a>, Айдарбек Стамов, координатор по инжинирингу;
+                </span>
+            </p>
+            <a class="footer__to-home to-home a" href="#home">
+                <div class="text">
+                    ВВЕРХ
+                </div>
+                <img src="https://static.growthmarketingsummit.com/2020/to-top.gif" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="{%static 'main/js/jquery.js' %}"></script>
+    <script src="{%static 'main/js/main.js' %}"></script>
+
+    {% block scripts %}
+    {% endblock%}
+</body>
+</html>

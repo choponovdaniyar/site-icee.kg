@@ -1,0 +1,24 @@
+.social-events{
+    color: rgb(33,37,41);
+    box-sizing: border-box;
+    padding-top: 120px;
+}
+.social-events .text .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-events .text p{
+    margin: 25px 0;
+}
+.social-events .text img{
+    margin: 15px;
+    width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .social-events .text img{
+        width: 100%;
+    }
+}

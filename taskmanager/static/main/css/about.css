@@ -1,0 +1,32 @@
+section > div{
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.general-info{
+    color: rgb(33,37,41)
+}
+
+.general-info__container{
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+
+.format{
+    color: rgb(33,37,41);
+    background-color: rgb(170, 170, 170);
+}
+
+.format__container{
+    padding: 50px 15px;
+}
+
+
+.direction{
+    color: rgb(33,37,41);
+}
+.direction__container{
+    padding: 50px 15px;
+    
+}

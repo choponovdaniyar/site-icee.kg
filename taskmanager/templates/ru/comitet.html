@@ -1,0 +1,54 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+Комитет конференции
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/comitet.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:committee' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:committee' %}
+{% endblock %}
+
+
+{% block logo %}
+{%  load    static %}
+{% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="comitet">
+        {% for comitet in comitets %}
+            <div class="comitet__container container">
+                <h3 class="title">{{ comitet.name }}</h3>
+                {% for usr in comitet.users.all %}
+                    <div class="user">
+                        <div class="text">
+                            <p class="name bold">{{ usr.name|safe }}</p>
+                            
+                            {% if usr.country|safe %}
+                                <p class="company">{{ usr.country|safe }}</p>
+                            {% endif %}
+                            
+                            {% if usr.position %}
+                                <p class="posititon">{{ usr.position|safe }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

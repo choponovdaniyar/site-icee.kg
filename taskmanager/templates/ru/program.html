@@ -1,0 +1,92 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+    Программа конференции
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/program.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:program' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:program' %}
+{% endblock %}
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+{% block content %}
+     <div class="program myblocks">
+        <div class="program__container">
+            <div class="program__general myblock1">
+                <div class="container">
+                    <h3 class="title">Общая программа конференции</h3>
+                    <div class="text">
+                        <p>
+                            <span class="bold">Программа конференции включает:</span> заказные и пленарные доклады, тематические доклады на секционных заседаниях, специальные презентации, рекламные информации и выставки.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="program__main myblock2">
+                <div class="container">
+                    <h3 class="title">Основная программа конференции</h3>
+                    <div class="text">
+                        <div class="main__1 myblock2">
+                            <p>
+                                <span class="bold">Первая часть конференции</span> – место проведения: <span class="bold">отель «Jannat Regency»</span>
+                            </p>
+                            {% for el in program%}
+                                {% if el.round == '1' %}
+                                    <div class="day">
+                                        <p class="accordion">{{ el.date.year}}-{{ el.date.month }}-{{ el.date.day }}</p>
+                                        <div class="panel">
+                                            {{ el.position|safe|linebreaks }}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {%  endfor %}
+                            <div class="day">
+                            </div>
+
+                        </div>
+                        <div class="main__2 myblock2">
+                            <p>
+                                <span class="bold">Вторая часть конференции</span> - место проведения: <span class="bold"> отель «Talisman Village» <span>
+                            </p>
+                            {% for el in program%}
+                                {% if el.round == '2' %}
+                                    <div class="day">
+                                        <p class="accordion">{{ el.date.year}}-{{ el.date.month }}-{{ el.date.day }}</p>
+                                        <div class="panel">
+                                            {{ el.position|linebreaks }}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {%  endfor %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {%  load    static %}
+    <script src="{% static 'main/js/program.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,106 @@
+{% extends 'en/temps/base.html' %}
+
+
+{% block title %}
+Conference venue
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+{% endblock %}
+
+{% block lang_en %}
+    {% url 'en:about-conference' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:about-conference' %}
+{% endblock %}
+
+
+
+{% block logo %}
+{%  load    static %}
+{% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <section class="general-info">
+        <div class="general-info__container container">
+            <h2 class="title">
+                Conference General Information
+            </h2>
+            <div class="text">
+                <p>
+                    IAEEE holds international scientific-research and practical conferences in the field of earthquake engineering and for the period of existence since 2016, has organized and conducted two conferences in 2016 – 2018 and more than 10 workshops and seminars during 2016-2022.
+                </p>
+                <p>
+                    International conferences are held to discuss, analyze and develop the ways of solutions regarding of problems and issues related with seismic safety: seismic zoning and micro-zoning, seismic hazard, development of normative and technical documentation for the construction of buildings and structures in seismic areas, earthquake engineering of buildings and structures, assessment and improvement of seismic (earthquake) resistance, design standards, high-quality modeling and calculation of construction and engineering facilities under the seismic effects, including methods of engineering inspection (survey) and seismic retrofitting.
+                </p>
+                <p>
+                    Within the framework of the conference and within round tables and plenary meetings, the leading experts in the field of earthquake engineering are finding advanced methods and tools for implementing the many set goals and objectives that are set for IAEEE, including its full members and partners.
+                </p>
+                <p>
+                     Important for IAEEE is the constant strengthening of the position by holding International scientific-research and practical conferences on earthquake engineering; development of normative and technical documents (SNiP or Building Codes, Special Design Criteria, manuals, recommendations and etc.) in the field of seismic safety, earthquake engineering, seismic risk, seismic isolation systems, seismic retrofitting; engineering inspection (survey) methodology and building designs expertise in compliance with the requirements of design standards and earthquake engineering; conducting theoretical studies and research and experimental vibrodynamic field testing; monitoring and evaluating the behavior of buildings online regime.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="format">
+        <div class="format__container container">
+            <h2 class="title">
+                Conference Format, Goals and Topics
+            </h2>
+            <div class="text">
+                <p>
+                    <span class="bold">Conference format:</span>
+                    Leading scientists and specialists with extensive work experience in research, structural and seismic analysis,
+                    design of earthquake-resistant buildings and structures from the CIS countries and far abroad, representatives of leading
+                    scientific-research institutions, specialists of design organizations, expertise, young researchers, PhD students, master students
+                    and students youth of higher education universities are invited to the conference.    
+                </p>
+                <p>
+                    <ul>
+                        <span class="bold"> Conference goals </span>
+                        <p>
+                            ꟷ Expanding the communication and relations of scientists, researchers and specialists in the field of seismic safety of various countries in establishing contacts, experience exchanging of scientific-technical, research and commercial information. 
+                        </p>
+                        <p>
+                            ꟷ Creating dialogue and determining development paths in terms of attracting attention to the problems and issues of seismic safety and earthquake engineering; popularization of engineering-construction and technical education; quality of modelling, calculations, structural and seismic analysis of load-bearing building structures; design, engineering inspection (survey) and retrofitting (strengthening) of buildings and structures.
+                        </p>
+                        <p>
+                            ꟷ Formation of single space for interaction of experts in the field of earthquake engineering to develop effective approaches for improving seismic safety. 
+                        </p>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="direction">
+        <div class="direction__container container">
+            <h2 class="title">
+                Scientific-Research and Practical Conference Topics / Areas
+            </h2>
+            <div class="text">
+                <p>1. Development of normative and technical documentation in the field of earthquake engineering;</p>
+                <p>2. Maps of seismic zoning and seismic microzoning;</p>
+                <p>3. Problems of seismic safety and development paths of earthquake engineering;</p>
+                <p>4. Features of seismic isolation systems and their development;</p>
+                <p>5. Design, modelling, calculation and analysis of buildings and structures under seismic actions;</p>
+                <p>6. Innovative and advanced technologies in the field of earthquake engineering;</p>
+                <p>7. Seismic risk and seismic vulnerability, reduction of natural and technological effects of earthquakes; earthquake resistance of existing buildings and urban areas;</p>
+                <p>8. Engineering survey, retrofitting methods, restoration and reconstruction of load-bearing building structures of buildings;</p>
+                <p>9. Earthquake resistance of hydraulic, transport and underground engineering structures;</p>
+                <p>10. Ways to ensure seismic safety of school buildings.</p>
+                <p>11. Geotechnics, engineering surveys and remote sensing</p>
+                <p>12. Special session «EARTHQUAKE INSURANCE»</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+Объявление и регламент конференции
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/myadvt.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:advertisement' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:advertisement' %}
+{% endblock %}
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="myblocks">
+        <div class="advts__container">
+            <div class="myblock1">
+                <div class="container">
+                    <h2 class="title">
+                        Объявление о конференции
+                    </h2>
+                    <div class="text">
+                        <p>
+                            Программа конференции доступна на <a href="conference-program" target="_blank">веб-сайте конференции</a> и на  <a href="https://iaeee.kg/" target="_blank">веб-сайте МАЭСС</a> .
+                        </p>
+                        <p>
+                            Информационные сообщения и приглашения к участию в предстоящей конференции отправляются согласно графику организации конференции.
+                        </p>
+                        <p>
+                            До начала конференции будет издан Вестник МАЭСС, включающий материалы III-Международной научно-практической конференции по сейсмостойкому строительству.
+                        </p>
+                        <p>
+                            Выступающим с докладами вручаются дипломы.
+                        </p>
+                        <p>
+                            Активные участники конференции без докладов могут получить сертификаты об участии.
+                        </p>
+                        <p>
+                            <span class="bold">
+                                Внимание! Конференция также будет проводиться в онлайн-режиме для участников, которые не смогут принять очное участие.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="myblock2">
+                <div class="container">
+                    <h2 class="title">
+                        Регламент работы конференции
+                    </h2>
+                    <div class="text">
+                        <p>
+                            <span class="bold">Рабочие языки:</span>  русский и английский (в сопровождении с синхронным переводом).
+                        </p>
+                        <p>
+                            <span class="bold">Время выступления:</span>
+                        </p>
+                        <p>
+                            ꟷ приветственные выступления и краткие сообщения – до 5 минут;
+                        </p>
+                        <p>
+                            ꟷ заказные доклады – до 30 минут;
+                        </p>
+                        <p>
+                            ꟷ пленарные доклады – до 20 минут;
+                        </p>
+                        <p>
+                            ꟷ научные доклады на секциях – до 10 минут.
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

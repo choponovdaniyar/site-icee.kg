@@ -1,0 +1,141 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+Регистрация участников конференции
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/reg.css' %}">
+{% endblock %}
+
+{% block lang_en %}
+    {% url 'en:registration' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:registration' %}
+{% endblock %}
+
+
+{% block logo %}
+{%  load    static %}
+{% static 'main/img/logo.png' %}
+{% endblock %}
+
+{% block content %}
+    <div class="reg">
+        <h2 class="title">
+            Регистрация
+            <span class="subtitle">До 27 июня 2022г.</span>
+        </h2>
+        <div class="reg__container container">
+            <b>Регистрация закрыта</b>
+<!--
+         <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="face-type">
+                <label>Тип лица</label>
+                {{ form.face_type }}
+            </div>
+
+
+            <div class="fist-name">
+                <p>Имя *</p>
+                {{ form.first_name }}
+            </div>
+            <div class="last-name">
+                <p>Фамилия *</p>
+                {{ form.last_name }}
+            </div>
+
+
+            <div class="academic-title">
+                <p>Ученое звание</p>
+                {{ form.academic_title }}
+            </div>
+            <div class="academic-status">
+                <p>Ученая степень</p>
+                {{ form.academic_status  }}
+            </div>
+
+
+            <div class="format">
+                <label>Форма участия </label>
+                {{ form.format }}
+            </div>
+            <div class="role">
+                <label>Роль на конферении</label>
+                {{ form.role }}
+            </div>
+
+
+            <div class="company">
+                <p>Организация *</p>
+                {{ form.company }}
+            </div>
+            <div class="company-status">
+                <p>Должность *</p>
+                 {{ form.company_status }}
+            </div>
+
+
+            <div class="email">
+                <p>e-mail *</p>
+                {{ form.email  }}
+            </div>
+            <div class="phonenumber">
+                <p>Номер вашего телефона *</p>
+                {{ form.phonenumber  }}
+            </div>
+
+
+            <div class="city">
+                <p>Город *</p>
+                {{ form.city  }}
+            </div>
+            <div class="country">
+                <p>Страна *</p>
+                {{ form.country  }}
+            </div>
+
+            <div class="subject">
+                <p>Тема статьи / доклада</p>
+                {{ form.subject }}
+            </div>
+            <div class="discription">
+                <p>Краткое описание статьи / доклада</p>
+                {{ form.discription }}
+            </div>
+
+            <div class="paper">
+                <p>Доклад / статья</p>
+                {{ form.paper }}
+            </div>   
+            
+            <div class="hotel">
+                <p>Бронирование номера в отеле:</p>
+                <p>{{ form.hotel1 }} Самостоятельный выбор жилья в г. Бишкек</p>
+                <p>{{ form.hotel2 }} Отель “Jannat Regency”, г. Бишкек</p>
+                <p>{{ form.hotel3 }} Отель “Золотой Дракон”, г. Бишкек</p>
+                <p>{{ form.hotel4 }} Отель “Talisman Village”, Иссык-Куль</p>    
+            </div>   
+
+             <div class="files">
+                <p>Прикрепить файл (статья / доклад)</p>
+                {{ form.files }}
+            </div>
+
+            <button class="button reg__button" type="submit">Зарегистрироваться</button>
+
+            {% if error %}
+                <p style="color:green"> {{ error }} </p>
+            {% endif %}
+        </form>
+-->
+        </div>
+    </div>
+{% endblock %}

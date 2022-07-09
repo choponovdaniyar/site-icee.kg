@@ -1,0 +1,391 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+Прайс листы отелей
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:price-list' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:price-list' %}
+{% endblock %}
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="myblocks">
+        <div class="advts__container">
+            <div class="myblock1">
+                <div class="container">
+                    <h3 class="title">
+                        Предложения отелей
+                    </h3>
+                    <div class="text">
+                        <p>
+                            <b>Дорогие участники! <span class="text_red">Внимание!</span></b>
+                        </p>
+                        <p>
+                            Напоминаем, что Конференция будет проводиться в отеле “Jannat Regency”!
+                        </p>
+                        <p>
+                            Для проживания, МАЭСС предлагает два отеля на выбор. С ценами и номерами, вы
+                        можете ознакомиться в ниже следующей таблице! При бронировании, необходимо
+                        обратится по указанным контактам и сказать, что Вы являетесь участником нашей
+                        Конференции, так как для наших участников цены предлагаются со скидкой в отличие от
+                        других проживающих!
+                        </p>
+                        <p>
+                            <div class="text_red"><b>Внимание!</b></div>
+                            Бронировать необходимо сейчас, так как в данные отели, места / номера 
+                        бронируются за несколько месяцев вперед!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="hotel">
+                        <div class="hotel__title hotel_b bt1 bl1 br1 bb1">
+                            Отель “Золотой дракон”, г. Бишкек
+                        </div>
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Адрес
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            720005, Кыргызская Республика, г. Бишкек,
+                            ул. Мукая Элебаева 60
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Контакты
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1 ">
+                            <p>- тел.: 996 (312) 902 771;</p>
+                            <p>- веб-сайт, номера <a href="https://goldendragon.kg/">https://goldendragon.kg/</a></p>
+                        </div>
+                       
+                        <div class="hotel__title bl1 hotel_b br1 bb1">
+                            Номера и цены
+                        </div> 
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Цена
+                        </div>
+                       
+                        <div class="hotel__text hotel_b bb1 bl1 br1">
+                            Название 
+                        </div>
+
+                        <div class="hotel__subtitle  bl1 bb1">
+                            <p>50 USD (без скидки)</p>
+                            <p>40 USD (со скидкой)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Одноместные</p>
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            <p>55 USD (без скидки)</p>
+                            <p>45 USD (со скидкой)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Двухместные</p>
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            <p>65 USD (без скидки)</p>
+                            <p>50 USD (со скидкой)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Делюксы (улучшенные)</p>
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            <p>85 USD (без скидки)</p>
+                            <p>75 USD (со скидкой)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Люкс-апартаменты</p>
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            <p>Дополнительная информация</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p class="hotel_b">В стоимость номера входит</p>
+                            <p>- завтрак;</p>
+                            <p>- трансфер аэропорт –отель - аэропорт;</p>
+                            <p>- тренажерный зал;</p>
+                            <p>- интернет (Wi-Fi) в холле и в номерах;</p>
+                            <p>- мини-бар (минеральная вода, кофе, чай);</p>
+                            <p>- использование бассейна (летнее время).</p>
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Оплата
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>
+                                1) Наличные: USD, EURO, Тенге, Рубли,
+                                Сомы по курсу НБКР на день оплаты;
+                            </p>
+                            <p>
+                                2) Кредитные карты VISA, EuroCard /
+                                MasterCard, American Express - 
+                                Банковское перечисление;    
+                            </p>
+                            <p><b>
+                                Оплата производится в национальнойвалюте 
+                                по курсу НБКР на день оплаты.
+                            </b></p>
+                                                   
+                        </div>
+                    </div>
+
+                    <div class="hotel">
+                        <div class="hotel__title hotel_b bt1 bl1 br1 bb1">
+                            Отель “Jannat Regency”, г. Бишкек
+                        </div>
+
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Адрес
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            720060, Кыргызская Республика, г. Бишкек,
+                            ул. Аалы Токомбаева 21/2
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Контакты
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1 ">
+                            <p>- тел.: 996 (312) 909 750; 996 (312) 520 179;996 (555) 772 688;</p>
+                            <p>- веб-сайт, номера <a href="https://jannat.kg/ru/regency/">https://jannat.kg/ru/regency</a></p>
+                        </div>
+                       
+                        <div class="hotel__title bl1 hotel_b br1 bb1">
+                            Номера и цены
+                        </div> 
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Цена (указана со скидкой)
+                        </div>
+                       
+                        <div class="hotel__text hotel_b bb1 bl1 br1">
+                            Название 
+                        </div>
+
+                              
+                        
+                        <div class="hotel__subtitle bl1 bb1">
+                            95 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Одиночный стандартный (25 м^2) 
+                        </div>
+                        
+                        <div class="hotel__subtitle bl1 bb1">
+                            115 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Стандартный на двоих (двуспальная кровать – 35 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            115 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Стандартный на двоих (две раздельные кровати - 35 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            144 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Делюкс (32 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            154 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Executive (50 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            210 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Junior Suite (45 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            333 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Executive Suite (95 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            665 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Президентский номер (119 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Дополнительная информация
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p><b>В стоимость номера входит:</b></p>
+                            <p>- завтрак («шведский стол»);</p>
+                            <p>- тренажёрный зал;</p>
+                            <p>- 2 раздельные сауны;</p>
+                            <p>- Wi-Fi интернет;</p>
+                            <p>- круглосуточное обслуживание номеров;</p>
+                            <p>- охраняемая автостоянка до 300 мест.</p>
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Оплата
+                        </div>
+                        <div class="hotel__subtitle hotel_b bl1 bb1 br1">
+                            Цены указаны в USD, расчеты проводятся в
+                            национальной валюте по курсу НБКР.
+                        </div>
+                    </div>
+
+
+                    <p class="title">Условия проживания и регистрации в отель пансионата «Talisman Village Hotel» </p>
+                    <div class="hotel-3">
+                        <div class="hotel-3__title bb1 bt1 bl1 br1 hotel_b">
+                            Номера (комнаты)
+                        </div>
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Наименование номеров
+                        </div>
+                        <div class="hotel__subtitle bb1 bl1 br1 hotel_b">
+                            Цена проживани я в номере (без питания)/сом
+                        </div>
+                        <div class="hotel__subtitle br1 bb1 hotel_b">
+                            Ссылки на фотографии
+                        </div>
+
+                        <div class="hotel__text bl1 bb1 hotel_b">
+                            Стандартный номер 2-х
+                            местный с раздельными
+                            кроватями 90*200 см
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            2380 сом
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                            <a href="https://talisman.kg/product/room/dvuhmestnyj-standart-3h-razovoe-pitanie/">
+                                https://talisman.kg/product/room/dvuhmestnyj-standart-3h-razovoe-pitanie/
+                            </a>
+                        </div>
+
+                        <div class="hotel__text bl1 bb1 hotel_b">
+                            Коттеджный номер 2-х
+                            местный с двумя
+                            раздельными кроватями
+                            130*200см
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            5050 сом
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                            <a href="https://talisman.kg/product/room/dvuhmestnyj-kottedzh-3h-razovoe-pitanie/">
+                                https://talisman.kg/product/room/dvuhmestnyj-kottedzh-3h-razovoe-pitanie/
+                            </a>
+                        </div>
+
+                        <div class="hotel__text bl1 bb1 hotel_b">
+                            Семейный коттедж 4-х
+                            местный
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            11645 сом
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                            <a href="https://talisman.kg/product/room/semejnyj-kottedzh-3h-razovoe-pitanie/">
+                                https://talisman.kg/product/room/semejnyj-kottedzh-3h-razovoe-pitanie/
+                            </a>    
+                        </div>
+    
+                        <div class="hotel-3__title bb1 bl1 br1 hotel_b">
+                            Оплата за питание
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Завтрак (на 1 чел.)
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            340 сом
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Обед (на 1 чел.)
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            850 сом
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Ужин (на 1 чел.)
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            680 сом
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Примечание:
+                        </div>
+
+                        <div class="hotel__text hotel-3__text-2 bb1 bl1 br1">
+                            <b> Цены указаны в национальной валюте.</b> Оплата может
+                            производится в долларах США, российских рублях,
+                            казахских тенге <b>по курсу валют коммерческого банка на
+                            день оплаты!</b> (Демир Банк, обслуживающий пансионат).
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Примечание:
+                        </div>
+                        <div class="hotel__text hotel-3__text-2 bb1 bl1 br1">
+                            Питание оплачивается отдельно, при необходимости.
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Примечание:
+                        </div>
+                        <div class="hotel__text hotel-3__text-2 bb1 bl1 br1">
+                            Для участников конференции предоставлена скидка в 10%.
+                            Бронировать нужно напрямую по указанному номеру.
+                            Необходимо сказать, что вы участники Конференции.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

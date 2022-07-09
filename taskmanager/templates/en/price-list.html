@@ -1,0 +1,388 @@
+{% extends 'en/temps/base.html' %}
+
+
+{% block title %}
+Price Lists of Hotels
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:price-list' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:price-list' %}
+{% endblock %}
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="myblocks">
+        <div class="advts__container">
+            <div class="myblock1">
+                <div class="container">
+                    <h3 class="title">
+                        Hotel offers
+                    </h3>
+                    <div class="text">
+                        <p>
+                            <b>Dear participants! <span class="text_red">Attention!</span></b> 
+                        </p>
+                        <p>
+                            We remind you that the Conference will be held at the “Jannat Regency” Hotel!
+                        </p>
+                        <p>
+                            For accommodation, the IAEEE offers two hotels to select. With prices and numbers, you
+                            can find and review in the following table below! In process of booking, you must contact the
+                            indicated contacts and say that you are a participant in our Conference, as prices for our
+                            participants are offered at a discount, unlike other residents!
+                        </p>
+                        <p>
+                            <b><div class="text_red">Attention!</div></b> You must to book now, as places / rooms in 
+                            these hotels are booked several months in advance!
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="hotel">
+                        <div class="hotel__title hotel_b bt1 bl1 br1 bb1">
+                            “Golden Dragon” Hotel, Bishkek
+                        </div>
+
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Address
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            720005, Kyrgyz Republic, Bishkek,
+                            Mukai Elebaeva street 60
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Contacts
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1 ">
+                            <p>- tel.: 996 (312) 902 771;</p>                    
+                            <p>- website, rooms: <a href="https://goldendragon.kg/">https://goldendragon.kg/</a> </p>       
+                        </div>
+                       
+                        <div class="hotel__title bl1 hotel_b br1 bb1">
+                            Rooms and prices
+                        </div> 
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Price
+                        </div>
+                       
+                        <div class="hotel__text hotel_b bb1 bl1 br1">
+                            Type
+                        </div>
+
+                        <div class="hotel__subtitle  bl1 bb1">
+                            <p>50 USD (without discount)</p>
+                            <p>40 USD (with discount)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Single</p>
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            <p>55 USD (without discount)</p>
+                            <p>45 USD (with discount)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Double</p>
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            <p>65 USD (without discount)</p>
+                            <p>50 USD (with discount)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Deluxe (superior)</p>
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            <p>85 USD (without discount)</p>
+                            <p>75 USD (with discount)</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>Lux apartments</p>
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            <p>Additional information</p>
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p class="hotel_b">Room price includes: </p>
+                            <p>- breakfast;</p>
+                            <p>- transfer airport – hotel – airport;</p>
+                            <p>- gym / fitness room;</p>
+                            <p>- internet (Wi-Fi) in hall and in rooms;</p>
+                            <p>- mini-bar (mineral water, coffee, tea);</p>
+                            <p>- swimming pool use (Summer time).</p>
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Оплата
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p>
+                                1) Cash: USD, EURO, Tenge, Rubles, KGS at
+                                the rate of the NBKR on the day of payment;
+                            </p>
+                            <p>
+                                2) Credit cards VISA, EuroCard / MasterCard,
+                                American Express;
+                                - Bank transfer;    
+                            </p>
+                            <p><b>
+                                Payment is made in national currency at the
+                                rate of the National Bank of the Kyrgyz
+                                Republic on the day of payment.
+                            </b></p>
+                                                   
+                        </div>
+                    </div>
+
+                    <div class="hotel">
+                        <div class="hotel__title hotel_b bt1 bl1 br1 bb1">
+                            “Jannat Regency” Hotel, Bishkek
+                        </div>
+
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Address
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            720060, Kyrgyz Republic, Bishkek, Aaly Tokombaeva street 21/2
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Contacts
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1 ">
+                            <p>- tel.: 996 (312) 909 750; 996 (312) 520 179; 996 (555) 772 688;</p>
+                            <p>- website, rooms: <a href="https://jannat.kg/ru/regency">https://jannat.kg/ru/regency</a></p>
+                        </div>
+                       
+                        <div class="hotel__title bl1 hotel_b br1 bb1">
+                            Rooms and prices
+                        </div> 
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Price (listed with a discount)
+                        </div>
+                       
+                        <div class="hotel__text hotel_b bb1 bl1 br1">
+                            Type
+                        </div>
+
+                              
+                        
+                        <div class="hotel__subtitle bl1 bb1">
+                            95 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Standard Single (25 m^2) 
+                        </div>
+                        
+                        <div class="hotel__subtitle bl1 bb1">
+                            115 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Standard Double (double bed - 35 m^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            115 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Standard Twin (two separate beds - 35 m^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            144 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Deluxe (32 m^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            154 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Executive (50 m^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            210 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Junior Suite (45 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            333 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Executive Suite (95 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1">
+                            665 USD
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            Presidential Suite (119 м^2)
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Additional information
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            <p><b>Room price includes:</b></p>
+                            <p>- breakfast (Swedish table);</p>
+                            <p>- gym / fitness room;</p>
+                            <p>- 2 separate saunas</p>
+                            <p>- Wi-Fi internet;</p>
+                            <p>- 24 hour room service;</p>
+                            <p>- guarded car parking lot up to 300 places.</p>
+                        </div>
+
+                        <div class="hotel__subtitle hotel_b bl1 bb1">
+                            Payment
+                        </div>
+                        <div class="hotel__subtitle hotel_b bl1 bb1 br1">
+                            Prices are in USD, payments are made in national currency at    
+                            the rate of the National Bank of the Kyrgyz Republic.
+                        </div>
+                    </div>
+                    
+                    <p class="title">Conditions and terms of accommodation and registration in hotel of the boarding house "Talisman Village Hotel"</p>
+                    <div class="hotel-3">
+                        <div class="hotel-3__title bb1 bt1 bl1 br1 hotel_b">
+                            Rooms
+                        </div>
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Room names
+                        </div>
+                        <div class="hotel__subtitle bb1 bl1 br1 hotel_b">
+                            Price of accommodation in a room(without meals) / KGS
+                        </div>
+                        <div class="hotel__subtitle br1 bb1 hotel_b">
+                            Links to hotel’s photo materials
+                        </div>
+                        <div class="hotel__text bl1 bb1 hotel_b">
+                            Standard double room
+                            (for 2 persons) with
+                            separate/single beds
+                            90*200 cm
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            2380 KGS
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                            <a href="https://talisman.kg/product/room/dvuhmestnyj-standart-3h-razovoe-pitanie/">
+                                https://talisman.kg/product/room/dvuhmestnyj-standart-3h-razovoe-pitanie/
+                            </a>
+                        </div>
+
+                        <div class="hotel__text bl1 bb1 hotel_b">
+                            Cottage double room (for
+                            2 persons) with two
+                            separate/single beds
+                            130*200 cm
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            5050 KGS
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                            <a href="https://talisman.kg/product/room/dvuhmestnyj-kottedzh-3h-razovoe-pitanie/">
+                                https://talisman.kg/product/room/dvuhmestnyj-kottedzh-3h-razovoe-pitanie/
+                            </a>
+                        </div>
+
+                        <div class="hotel__text bl1 bb1 hotel_b">
+                            Family cottage for 4
+                            persons
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            11645 KGS
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                            <a href="https://talisman.kg/product/room/semejnyj-kottedzh-3h-razovoe-pitanie/">
+                                https://talisman.kg/product/room/semejnyj-kottedzh-3h-razovoe-pitanie/
+                            </a>    
+                        </div>
+    
+                        <div class="hotel-3__title bb1 bl1 br1 hotel_b">
+                            Payment for meals
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Breakfast (per 1 person)
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            340 KGS
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Lunch (per 1 person)
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            850 KGS
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Dinner (per 1 person)
+                        </div>
+                        <div class="hotel__text bb1 bl1 br1">
+                            680 KGS
+                        </div>
+                        <div class="hotel__text br1 bb1">
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Note 1:
+                        </div>
+
+                        <div class="hotel__text hotel-3__text-2 bb1 bl1 br1">
+                            <b>Prices are in national currency.</b> Payment can be made in US dollars, Russian rubles, Kazakh tenge at
+                            th <b>exchange rate of a commercial bank on the day of payment!</b> (Demir Bank serving boarding house).
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Note 2:
+                        </div>
+                        <div class="hotel__text hotel-3__text-2 bb1 bl1 br1">
+                            Meals are paid separately, if necessary.
+                        </div>
+
+                        <div class="hotel__subtitle bl1 bb1 hotel_b">
+                            Note 2:
+                        </div>
+                        <div class="hotel__text hotel-3__text-2 bb1 bl1 br1">
+                            A 10% discount is provided for the IAEEE Conference participants.
+                            Reservations/bookings must be made directly to the given number.
+                            It is necessary to say that you are the Conference participants.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

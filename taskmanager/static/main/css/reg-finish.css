@@ -1,0 +1,20 @@
+.registration-finish{
+    color: rgb(33,37,41);
+
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    text-align: center;
+}
+
+
+.registration-finish img{
+    margi: 20px;
+    width: 70vw;
+    max-width: 400px;
+}

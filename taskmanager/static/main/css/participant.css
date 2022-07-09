@@ -1,0 +1,25 @@
+.cateogory{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+}
+@media screen and (max-width: 768px) {
+    .cateogory{
+        width: 100%;
+    }
+}
+.cateogory__title,
+.cateogory__empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-column: 1/4;
+}
+.cateogory__empty{
+    height: 3rem;
+}
+
+.cateogory div{
+    padding: 3px 5px;
+}

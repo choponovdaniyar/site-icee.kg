@@ -1,0 +1,98 @@
+{% extends 'en/temps/base.html' %}
+
+
+{% block title %}
+Conference аnnouncement and regulation
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/myadvt.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:advertisement' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:advertisement' %}
+{% endblock %}
+
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="myblocks">
+        <div class="advts__container">
+            <div class="myblock1">
+                <div class="container">
+                    <h2 class="title">
+                        Conference Announcement
+                    </h2>
+                    <div class="text">
+                        <p>
+                            Conference program is available on the <a href="https://icee.kg/conference-program  "  target="_blank">Conference web-site</a> and <a href="https://iaeee.kg/"  target="_blank">IAEEE web-site</a>.
+                        </p>
+                        <p>
+                            Information messages and invitations to participate in the upcoming conference will be send according to the conference organization schedule.
+                        </p>
+                        <p>
+                            Prior to the conference, IAEEE Journal  will be published, including materials from the III International Scientific and Practical Conference on Earthquake Engineering.
+                        </p>
+                        <p>
+                            Speakers with research papers will be awarded diplomas.
+                        </p>
+                        <p>
+                            Conference active participants without research papers can receive certificates of participation.
+                        </p>
+                        <p>
+                            <span class="bold">
+                                Attention! Conference will also be held online for participants who will not be able to take part in person (offline).
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="myblock2">
+                <div class="container">
+                    <h2 class="title">
+                        Conference Regulation
+                    </h2>
+                    <div class="text">
+                        <p>
+                            <span class="bold">Working languages:</span>
+                            Russian and English (accompanied by simultaneous translation).
+                        </p>
+                        <p>
+                            <span class="bold">PERFORMANCE TIME:</span>
+                        </p>
+                        <p>
+                            ꟷ welcome speeches and short messages – up to 5 minutes;
+                        </p>
+                        <p>
+                            ꟷ invited papers – up to 30 minutes;
+                        </p>
+                        <p>
+                            ꟷ plenary papers – up to 20 minutes;
+                        </p>
+                        <p>
+                            ꟷ research papers in sections – up to 10 minutes.
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

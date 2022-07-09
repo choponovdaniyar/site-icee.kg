@@ -1,0 +1,52 @@
+{% extends 'main/en/temps/base.html' %}
+
+
+{% block title %}
+Ох, какая соска
+{% endblock %}
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+{% endblock %}
+
+
+{% block logo %}
+{%  load    static %}
+{% static 'main/img/logo.png' %}
+{% endblock %}
+
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    {%  load    static %}
+    <style>
+        img.mia{
+            width: 80%;
+            height: auto;
+
+        }
+        .mia > .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <div class="mia">
+        <div class="container">
+            <img class="mia" rel="stylesheet" src="{% static 'main/img/mia.png' %}">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

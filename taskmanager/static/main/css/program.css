@@ -1,0 +1,70 @@
+.accordion{
+    position: relative;
+
+    width: 450px;
+
+    padding: 5px 15px;
+
+    border: 2px solid;
+}
+.accordion::after{
+    content: "+";
+
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    font-size: 1.4rem;
+
+    transition: .2s all;
+}
+.accordion-active::after{
+    content: "_";
+
+}
+@media screen and (max-width: 768px) {
+    .accordion{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 525px) {
+    .accordion{
+        width: 250px;
+    }
+}
+
+
+
+
+.panel{
+    display: none;
+
+    height: max-content;
+    width: 450px;
+
+    position: relative;
+
+    top: -10px;
+
+    padding: 15px;
+
+    text-align: justify;
+
+    border: 2px solid;
+}
+
+
+@media screen and (max-width: 768px) {
+    .panel{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 525px) {
+    .panel{
+        width: 250px;
+    }
+}
+
+
+
+

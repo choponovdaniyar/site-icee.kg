@@ -1,0 +1,81 @@
+{% extends 'en/temps/base.html' %}
+
+
+{% block title %}
+Social events
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/social-events.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:events' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:events' %}
+{% endblock %}
+
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    {%  load    static %}
+    <div class="social-events">
+        <div class="social-events__container">
+            <h1 class="title">Social Events</h1>
+            <div class="text myblock1">
+                <div class="container">
+                    <p class="title">
+                        Hippodrome
+                    </p>
+                    <img src="{% static 'main/img/1.jpg' %}" alt="">
+                    <p>
+                        An equestrian hippodrome is located on the shore of Lake Issyk-Kul, which is located 270 km from Bishkek. The hippodrome covers 25 hectares of territory and with a total capacity of 10,000 people. The hippodrome is a unique engineering structure, has national and international significance for the country. The III World Nomad Games were held at the hippodrome in 2016, prominent figures, as the President of Turkey, Recep Erdogan, the President of Kazakhstan, Nursultan Nazarbayev, the Hungarian Prime Minister, Viktor Orban and others, took part in the opening ceremony.
+                    </p>
+                    <img src="{% static 'main/img/2.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="text myblock2">
+                <div class="container">
+                    <p class="title">
+                        Cultural Center “Rukh Ordo” named after Ch. Aytmatov
+                    </p>
+                    <p>
+                        The Cultural Center “Rukh Ordo” (translated as “the Spiritual Center”) is an open-air museum located on the shores of Lake Issyk-Kul in Cholpon-Ata city. The complex was built in 2002 and was named in the name of the famous world writer of Kyrgyzstan, Chyngyz Aytmatov. The park includes 10 mini-museums, “Aytmatov’s Museum House”, “Kyrgyz Art and Culture Hall”,  “Sayakbay Karalayev’s Arbor”, “Knowledge Treasure trove” and five white chapels representing world religions, Islam, Catholicism, Orthodoxy, Buddhism and Judaism, characterizing uniqueness in the face of the Almighty God. The complex has dozens of sculptures, artifacts, arts and photo galleries, handicrafts made in different techniques that have been carefully passed from generation to generation. The exposition fund is constantly updated with new and interesting exhibitors. The complex provides with guides for conducting an hour and a half interactive tour to the culture, traditions, history and life of Kyrgyzstan and Kyrgyz people.
+                    </p>
+                    <img src="{% static 'main/img/3.jpg' %}" alt="">
+                    <img src="{% static 'main/img/4.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+            <div class="text myblock1">
+                <div class="container">
+                    <p class="title">
+                        Museum of Petroglyphs
+                    </p>
+                    <img src="{% static 'main/img/5.jpg' %}" alt="">
+                    <p>
+                        The Petroglyph Museum (or “Saimaluu Tash” – a stone garden) is located in the open air between the snow-capped mountains and Lake Issyk-Kul. It is an exhibition area that is part of the Issyk-Kul Historical and Cultural Museum-Reserve. The museum has a territory of 42 hectares, where 1,500 stones with ancient cave paintings are presented in the form of scenes of hunting, life and war, some of which are associated with the history of peoples, Scythians and Saks, some have images of a deer describing the legend of the mother of the deer as Bugu Ene. Some artifacts are from 30 cm to 3 m in size, about 4000 years old, relief images can be also found.
+                    </p>
+                    <img src="{% static 'main/img/6.jpg' %}" alt="">
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+{% endblock %}

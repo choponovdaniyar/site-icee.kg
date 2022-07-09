@@ -1,0 +1,78 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+    Требования и образец статьи и доклада
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <!-- <link rel="stylesheet" href="{% static 'main/css/myadvt.css' %}"> -->
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:requirements' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:requirements' %}
+{% endblock %}
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="myblocks">
+        <div class="advts__container">
+            <div class="myblock1">
+                <div class="container">
+                    <h2 class="title">
+                        Требования к оформлению докладов
+                    </h2>
+                    <div class="text">
+                        <p>
+                            При подготовке научной статьи или текста доклада, используйте шрифт
+                            Times New Roman, кегель 12, формат бумаги А4 (210х297 мм) с полями: сверху -
+                            25 мм; слева - 30 мм; снизу - 25 мм; справа - 15 мм. В качестве редактора следует
+                            использовать MS Word 2007 (и более поздние версии). Название доклада
+                            печатается заглавными буквами (междустрочный интервал 1). Через 2 строки
+                            после названия, печатаются инициалы и фамилии авторов, наименование
+                            организации (включая город и страну), которые они представляют и адреса
+                            электронной почты авторов. После одной строки, аннотации на кыргызском,
+                            русском и английском языках обязательны. После этого, через 2 строки печатается
+                            текст доклада, междустрочный интервал 1,5. Иллюстрации (рисунки), таблицы и
+                            список литературы (междустрочный интервал 1) следует включить в текст доклада.
+                        </p>
+                        <p>
+                            <b>
+                                Авторы несут полную ответственность за содержание, стиль и
+                                качество оформления доклада.
+                            </b>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="myblock2">
+                <div class="container">
+                    <h2 class="title">
+                        Образец научной статьи и доклада
+                    </h2>
+                    <div class="text">
+                        <p>
+                            <a href="https://docs.google.com/document/d/1BuMXwKA0MkbgixgUbf8Bdslu9ND4q_va/edit?usp=sharing&ouid=103192896801689740378&rtpof=true&sd=true">Образец научной статьи и доклада</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

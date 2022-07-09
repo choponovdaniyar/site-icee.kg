@@ -1,0 +1,75 @@
+{% extends 'en/temps/base.html' %}
+
+
+{% block title %}
+List of Registered Participants
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/participant.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:participant' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:participant' %}
+{% endblock %}
+
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+     <div class="program myblocks">
+        <div class="program__container">
+            <div class="program__general myblock1">
+                <div class="container">
+                    <h3 class="title">
+                        List of registered participants for the conference
+                        <br>
+                        <span>as for June 27, 2022 </span>
+                    </h3>
+                    <div class="text">
+                        {% for category in categories %}
+                        <div class="cateogory">
+                            <div class="cateogory__title bt1 bl1 br1 bb1">{{ category.name_en }} </div>
+                            {% if category.participant.count %}
+                                {% for p in category.participant.all %}
+                                    <div class="category__user-name bl1 br1 bb1">
+                                        {{ p.name_en}} 
+                                    </div>
+                                    <div class="category__user-company bb1">
+                                        {{ p.company_en}} 
+                                    </div>         
+                                    <div class="category__user-country bl1 br1 bb1">
+                                        {{ p.country.name_en}}
+                                    </div>          
+                                {% endfor %}
+                            {% else %}
+                            <div class="cateogory__empty bl1 br1 bb1"> empty </div>
+                            {% endif %}
+                        </div>
+                        <br>
+                    {% endfor %}
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {%  load    static %}
+    <script src="{% static 'main/js/program.js' %}"></script>
+{% endblock %}

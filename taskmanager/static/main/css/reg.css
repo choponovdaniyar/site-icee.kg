@@ -1,0 +1,59 @@
+.reg{
+    color: #212529;
+    padding-top: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+div > input,
+textarea,
+select,
+option{
+    opacity: unset;
+    outline: none;
+
+    width: 500px;
+    max-width: 100%;
+
+
+    border: 1px #212529 solid;
+
+    background-color: initial;
+    color: inherit;
+
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+select,
+option,
+input[type='file']{
+    width: max-content;
+}
+
+textarea{
+    resize: none;
+}
+
+form > div{
+    margin-bottom: 20px;
+}
+
+form p{
+    margin-bottom: 5px;
+}
+
+button{
+    transform: scale(0.8);
+}
+
+.reg__button{
+    margin: 0px;
+    margin-left: auto;
+}
+
+
+.hotel input[type='checkbox']{
+    margin-right: 5px;
+}

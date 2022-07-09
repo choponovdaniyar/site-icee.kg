@@ -1,0 +1,19 @@
+.comitet{
+    color: rgb(33,37,41);
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.comitet__container{
+    margin-bottom: 80px;
+}
+
+.user{
+    margin-bottom: 40px;
+}
+.text p{
+    margin-bottom: 8px;
+}

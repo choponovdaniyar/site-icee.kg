@@ -1,0 +1,38 @@
+{% extends 'main/ru/temps/base.html' %}
+
+
+{% block title %}
+Регистрация участников конференции
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/reg-finish.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en/main' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru/main' %}
+{% endblock %}
+
+{% block logo %}
+{%  load    static %}
+{% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    {%  load    static %}
+    <div class="container registration-finish">
+        <img src="{% static 'main/img/success.png' %}" alt="success">
+        <h1>
+            Регистрация успешно завершена!
+        </h1>
+    </div>
+{% endblock %}

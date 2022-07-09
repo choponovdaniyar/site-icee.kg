@@ -1,0 +1,79 @@
+{% extends 'en/temps/base.html' %}
+
+
+{% block title %}
+Requirements and Sample of Article and Paper
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <!-- <link rel="stylesheet" href="{% static 'main/css/myadvt.css' %}"> -->
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:advertisement' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:advertisement' %}
+{% endblock %}
+
+{% block logo %}
+    {%  load    static %}
+    {% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="myblocks">
+        <div class="advts__container">
+            <div class="myblock1">
+                <div class="container">
+                    <h2 class="title">
+                        Requirements for the Preparation of a Research Article 
+                    </h2>
+                    <div class="text">
+                        <p>
+                            In process of preparing a research article or the text of a research paper, use
+                            the Times New Roman font, size 12, A4 paper size (210x297 mm) with margins: top -
+                            25 mm; left - 30 mm; bottom - 25 mm; right - 15 mm. The editor should be as MS Word
+                            2007 (or later versions). The title of the research article or paper is printed in capital
+                            letters (line spacing 1). Then, 2 lines after the title, the initials and surnames of the
+                            authors, the name of the organization (including the city and country) that they
+                            represent, and the email addresses of the authors are printed. After one line, abstracts
+                            in Kyrgyz, Russian and English languages are required. After that, after 2 lines, the text
+                            of the research article or paper is printed, the line spacing is 1,5. Illustrations (figures),
+                            tables and a list of references (line spacing 1) should be included in the text of the
+                            research article or paper. The volume of the text of the research article or paper should
+                            not exceed 5 pages.
+                        </p>
+                        <p>
+                            <b>
+                                The authors bear full responsibility for the content, style and quality of
+                                prepared research article or paper.
+                            </b>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="myblock2">
+                <div class="container">
+                    <h2 class="title">
+                        Sample for Research Article / Paper
+                    </h2>
+                    <div class="text">
+                        <p>
+                            <a href="https://docs.google.com/document/d/1BuMXwKA0MkbgixgUbf8Bdslu9ND4q_va/edit?usp=sharing&ouid=103192896801689740378&rtpof=true&sd=true">Sample for research article / paper</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

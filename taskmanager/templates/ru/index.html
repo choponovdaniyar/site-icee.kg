@@ -1,0 +1,159 @@
+{% extends 'ru/temps/base.html' %}
+
+
+{% block title %}
+Главная
+{% endblock %}
+
+
+{% block css %}
+    {%  load    static %}
+    <link rel="stylesheet" href="{% static 'main/css/into.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+{% endblock %}
+
+
+{% block lang_en %}
+    {% url 'en:main' %}
+{% endblock %}
+
+
+{% block lang_ru %}
+    {% url 'ru:main' %}
+{% endblock %}
+
+
+{% block logo %}
+{%  load    static %}
+{% static 'main/img/logo.png' %}
+{% endblock %}
+
+
+{% block content %}
+    {% load static %}
+    <section class="into">
+        <div class="into__content container">
+            <div class="into__subtitle">
+                Посвященная Международному году устойчивого горного развития
+            </div>
+            <div class="into__title">
+                III Международная научно - практическая конференция
+
+            </div>
+            <div class="into__subtitle">
+                по сейсмостойкому строительству
+            </div>
+            <div class="into__event-date">
+                <span class="into__date">с 4 по 9 июля 2022 года</span> |
+                <span class="into__location"> Кыргызстан, г. Бишкек - Иссык-Куль</span>
+            </div>
+            <!-- 
+            <a href="{% url 'ru:registration' %}"  class="a">
+                <div class="button">
+                        Регистрация
+                </div>
+            </a>
+            -->
+            <a class="a" href="{% static 'main/files/program-ru.pdf' %}">
+                <div class="button">
+                    Программа конференции
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <main class="home">
+        <div class="home__container container">
+            <h1 class="title">Уважаемые коллеги, партнеры и друзья!</h1>
+            <div class="text">
+                <p>
+                    Международная Ассоциация экспертов по сейсмостойкому строительству
+                    (МАЭСС) объявляет о начале подготовки III Международной научно-практической
+                    конференции по сейсмостойкому строительству, посвященной Международному году
+                    устойчивого горного развития (вебсайт Конференции icee.kg).
+                </p>
+                <p>
+                    По инициативе Президента Кыргызской Республики в резолюции Пленарного заседания
+                    76-сессии Генеральной Ассамблеи ООН, 2022 год объявлен – Международным годом
+                    устойчивого горного развития.
+                </p>
+                <p>
+                    Конференция проводится в гибридной форме (онлайн и офлайн) в г. Бишкек и на
+                    Иссык-Куле с 4 по 9 июля 2022 года.
+                </p>
+                <p>
+                    Запланируйте ваше участие, приезд и встречу в г. Бишкек и на Иссык-Куле с сегодняшнего дня!
+                </p>
+            </div>
+
+            <div class="home__author">
+                <div>
+                    <p>С уважением,</p>
+                    <p>Президент МАЭСС,</p>
+                    <p>У.Т. Бегалиев</p>
+                </div>
+            </div>
+            <a href="{% static 'main/resume.pdf' %}"  class="a">
+                <div class="button">
+                    Резюме ОЮЛ "МАЭСС"
+                </div>
+            </a>
+        </div>
+
+        <div class="banner">
+            <img src="{% static 'main/img/banner.png' %}" class="banner__img" alt="баннер">
+        </div>
+        <div class="social" style="background-color:#fff; padding-top:20px; padding-bottom:20px;">
+          <a href="https://facebook.com/events/s/iii-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D0%BE-%D0%BF%D1%80%D0%B0%D0%BA%D1%82/2202214843260943/"  class="a">
+                  <div class="button" style="background-color:#4867AA; color:#fff;">
+                      facebook
+                  </div>
+          </a>
+          <a href="https://us06web.zoom.us/j/89631875491?pwd=elhjMVBJSWYzSFF6c3kzRkZ1bDRTUT09" class="a">
+                  <div class="button" style="margin-top:10px; background-color:#2C88F7; color:#fff;">
+                      zoom
+                  </div>
+          </a>
+        </div>
+        
+        <div> 
+        {% if spikers %}
+            <div class="spikers">
+                <div class="spikers__inner container">
+                    <div class="spikers__title title">
+                        Ключевые спикеры конференции
+                    </div>
+                    <div class="spiker__content">
+                        {% for spiker in spikers %}
+                        <div class="spiker">
+                            <div class="spiker__img">
+                                <img src="{{ spiker.image.url}}" alt="" class="spiker__img-inner">
+                            </div>
+                            <div class="spiker__name">
+                                {{ spiker.name }}    
+                            </div>
+                        </div>
+
+                        <div class="spiker-modal">
+                            <div class="spiker-modal__content">
+                                <div class="exit">
+                                </div>
+                                <div class="spiker-modal__img">
+                                    <img src="{{ spiker.image.url}}" alt="" class="spiker-modal__img-inner">
+                                </div>
+                                <div class="spiker-modal__name title">
+                                    {{ spiker.name }}  
+                                </div>
+                                <div class="spiker-modal__text">
+                                    {{ spiker.text|safe|linebreaks }}
+                            </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>  
+            </div>
+        {% endif %}
+    </main>
+    </html>
+{% endblock %}
